@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livingston Specialist Hospital | Compassionate Care in Enugu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(17, 24, 39, 0.6), rgba(17, 24, 39, 0.6)), url('https://images.unsplash.com/photo-1576091160550-2173dba9996a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in-section {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        /* Card hover effect */
+        .service-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        /* Header scroll effect */
+        .header-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+        }
+        .cta-button {
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(45, 123, 222, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Header Section -->
+    <header id="header" class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <svg class="h-10 w-10 text-cyan-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                <span class="text-2xl font-bold text-gray-800">Livingston</span>
+            </a>
+            <div class="hidden lg:flex items-center space-x-8 font-medium">
+                <a href="#services" class="text-gray-600 hover:text-cyan-600 transition duration-300">Services</a>
+                <a href="#about" class="text-gray-600 hover:text-cyan-600 transition duration-300">About Us</a>
+                <a href="#why-us" class="text-gray-600 hover:text-cyan-600 transition duration-300">Why Choose Us</a>
+                <a href="#contact" class="text-gray-600 hover:text-cyan-600 transition duration-300">Contact</a>
+            </div>
+            <a href="#contact" class="hidden lg:inline-block bg-cyan-600 text-white font-semibold px-6 py-3 rounded-full hover:bg-cyan-700 cta-button">
+                Book Appointment
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-gray-700">
+                <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4">
+            <a href="#services" class="block py-2 text-gray-600 hover:text-cyan-600">Services</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-cyan-600">About Us</a>
+            <a href="#why-us" class="block py-2 text-gray-600 hover:text-cyan-600">Why Choose Us</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-cyan-600">Contact</a>
+            <a href="#contact" class="block mt-3 w-full text-center bg-cyan-600 text-white font-semibold px-5 py-3 rounded-full hover:bg-cyan-700">
+                Book Appointment
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white">
+            <div class="container mx-auto px-6 py-32 md:py-48 text-center flex flex-col items-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 max-w-4xl">World-Class Healthcare, Here in Enugu</h1>
+                <p class="text-lg md:text-xl text-cyan-100 mb-10 max-w-3xl">
+                    Experience a new standard of patient-first specialized care at Livingston Specialist Hospital. Your health is our highest priority.
+                </p>
+                <a href="#contact" class="bg-white text-cyan-700 font-bold text-lg px-10 py-4 rounded-full hover:bg-gray-100 transition duration-300 cta-button">
+                    Schedule Your Consultation
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-base font-semibold text-cyan-600 tracking-wider uppercase">Our Services</h2>
+                    <p class="mt-2 text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Comprehensive Medical Specialties</p>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto text-lg">From routine check-ups to advanced treatments, our expert team is here for you.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Cards - Re-designed with better icons -->
+                    <div class="service-card bg-gray-50 p-8 rounded-2xl shadow-sm">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-2xl bg-cyan-100 text-cyan-600 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 2.5a4.5 4.5 0 0 1 3.16 7.84c-1.37 1.48-2.24 3.54-2.24 5.66v.5a2.5 2.5 0 0 1-5 0v-.5c0-2.12-.87-4.18-2.24-5.66A4.5 4.5 0 0 1 8 2.5h8z"/><path d="M8.5 2.5a4.5 4.5 0 0 0-3.16 7.84 2.5 2.5 0 0 0 0 3.32A4.5 4.5 0 0 0 8.5 21.5"/><path d="M15.5 2.5a4.5 4.5 0 0 1 3.16 7.84 2.5 2.5 0 0 1 0 3.32A4.5 4.5 0 0 1 15.5 21.5"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">O & G / Fertility</h3>
+                        <p class="text-gray-600">Complete women's health services, including maternity care and advanced fertility treatments to support your journey to parenthood.</p>
+                    </div>
+                     <div class="service-card bg-gray-50 p-8 rounded-2xl shadow-sm">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-2xl bg-cyan-100 text-cyan-600 mb-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2.83 2.83 0 0 0 4 4 4.17 4.17 0 0 1 0 6 2.83 2.83 0 0 0-4 4 2.83 2.83 0 0 0-4-4 4.17 4.17 0 0 1 0-6 2.83 2.83 0 0 0 4-4Z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Endocrinology</h3>
+                        <p class="text-gray-600">Specialized management of hormone-related conditions like diabetes and thyroid disorders for balanced health.</p>
+                    </div>
+                     <div class="service-card bg-gray-50 p-8 rounded-2xl shadow-sm">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-2xl bg-cyan-100 text-cyan-600 mb-6">
+                             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.11 9.11a1.53 1.53 0 0 0-2.22 0"/><path d="M14.11 9.11a1.53 1.53 0 0 1 2.22 0"/><path d="M11.63 2.5A4.5 4.5 0 0 0 4.5 9.63v4.92a4.5 4.5 0 0 0 4.5 4.5h.05a4.5 4.5 0 0 1 4.5-4.5h0a4.5 4.5 0 0 1 4.5 4.5h.05a4.5 4.5 0 0 0 4.5-4.5V9.63A4.5 4.5 0 0 0 12.37 2.5h-.74Z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Nephrology</h3>
+                        <p class="text-gray-600">Dedicated care for kidney health, providing comprehensive diagnosis, treatment, and management of renal diseases.</p>
+                    </div>
+                    <div class="service-card bg-gray-50 p-8 rounded-2xl shadow-sm">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-2xl bg-cyan-100 text-cyan-600 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H7Z"/><path d="M15.5 3a2.5 2.5 0 0 0-5 0"/><path d="M12 12h.01"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Dental Care</h3>
+                        <p class="text-gray-600">Full-service dental care, from preventative cleanings to cosmetic and restorative procedures for a healthy smile.</p>
+                    </div>
+                    <div class="service-card bg-gray-50 p-8 rounded-2xl shadow-sm">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-2xl bg-cyan-100 text-cyan-600 mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M20.54 12c-1.28-4.29-5.23-7-9.54-7s-8.26 2.71-9.54 7c1.28 4.29 5.23 7 9.54 7s8.26-2.71 9.54-7Z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Eye Care (Ophthalmology)</h3>
+                        <p class="text-gray-600">Advanced eye care services to protect your vision, including diagnostics, treatment, and surgical options.</p>
+                    </div>
+                    <div class="service-card bg-gray-50 p-8 rounded-2xl shadow-sm">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-2xl bg-cyan-100 text-cyan-600 mb-6">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M12 14a2 2 0 0 1-2-2 2 2 0 0 1-2-2"/><path d="m14 12 4-4"/><path d="M14 12a2 2 0 0 0-2-2 2 2 0 0 0-2-2"/><path d="M4 20h16"/><path d="M5 4h14a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-gray-900">Radiology</h3>
+                        <p class="text-gray-600">State-of-the-art diagnostic imaging technology for precise and timely medical assessments.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-base font-semibold text-cyan-600 tracking-wider uppercase">Our Commitment</h2>
+                        <p class="mt-2 text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">Why Patients Trust Livingston</p>
+                        <p class="text-gray-600 mt-6 text-lg">We combine medical excellence with a deeply personal approach to care, ensuring you feel valued and understood every step of the way.</p>
+                        <div class="mt-8 space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-xl bg-cyan-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v16m14 0h2m-2 0h-5m-7 0H3m2 0L5 5m0 16l2-16m3 16l2-16m3 16l2-16" /></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-900">State-of-the-Art Facility</h4>
+                                    <p class="text-gray-600 mt-1">Our hospital is equipped with the latest medical technology to provide accurate diagnoses and effective treatments.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-xl bg-cyan-600 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 0 0-5.356-1.857M17 20H7m10 0v-2c0-.653-.125-1.283-.356-1.857M7 20H2v-2a3 3 0 0 1 5.356-1.857M7 20v-2c0-.653.125-1.283.356-1.857m0 0a3.001 3.001 0 0 1 5.288 0M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" /></svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-bold text-gray-900">Expert & Compassionate Staff</h4>
+                                    <p class="text-gray-600 mt-1">Our team of specialists, nurses, and support staff are not only experts in their fields but also deeply compassionate caregivers.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="lg:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Doctor consulting with a patient" class="rounded-2xl shadow-xl w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials Section -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-base font-semibold text-cyan-600 tracking-wider uppercase">Patient Stories</h2>
+                    <p class="mt-2 text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">What Our Patients Say</p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-2xl">
+                        <p class="text-gray-700 italic">"The level of care and personal attention I received at Livingston was second to none. The doctors took the time to explain everything, and the nursing staff was incredibly kind. I felt safe and truly cared for."</p>
+                        <div class="mt-6 flex items-center">
+                            <img class="h-12 w-12 rounded-full" src="https://placehold.co/100x100/E2E8F0/475569?text=A.A" alt="Patient photo">
+                            <div class="ml-4">
+                                <p class="font-bold text-gray-900">Adebayo A.</p>
+                                <p class="text-gray-600 text-sm">Fertility Treatment Patient</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-2xl">
+                        <p class="text-gray-700 italic">"My experience with their dental clinic was fantastic. The facility is modern and clean, and the dentist was very professional. I highly recommend them to anyone in Enugu looking for quality healthcare."</p>
+                        <div class="mt-6 flex items-center">
+                            <img class="h-12 w-12 rounded-full" src="https://placehold.co/100x100/E2E8F0/475569?text=C.O" alt="Patient photo">
+                            <div class="ml-4">
+                                <p class="font-bold text-gray-900">Chiamaka O.</p>
+                                <p class="text-gray-600 text-sm">Dental Care Patient</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-cyan-700 text-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-extrabold">Ready to Take the Next Step?</h2>
+                    <p class="text-cyan-100 mt-4 max-w-2xl mx-auto text-lg">Contact us today to book an appointment or to speak with our patient care team. We're here to help.</p>
+                </div>
+                <div class="max-w-5xl mx-auto bg-white text-gray-800 rounded-2xl shadow-2xl p-8 md:p-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6 text-gray-900">Contact & Location</h3>
+                            <div class="space-y-6">
+                                 <div class="flex items-start space-x-4">
+                                    <svg class="w-7 h-7 text-cyan-600 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-lg text-gray-800">Address</h4>
+                                        <p class="text-gray-600">Chime Avenue, New Haven, Enugu, Nigeria</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-4">
+                                    <svg class="w-7 h-7 text-cyan-600 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-lg text-gray-800">Call Us</h4>
+                                        <p class="text-gray-600">09090667788</p>
+                                    </div>
+                                </div>
+                                 <div class="flex items-start space-x-4">
+                                    <svg class="w-7 h-7 text-cyan-600 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                                    <div>
+                                        <h4 class="font-semibold text-lg text-gray-800">Email Us</h4>
+                                        <p class="text-gray-600">livingstonspecialisthospital@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                             <h3 class="text-2xl font-bold mb-6 text-gray-900">Send a Message</h3>
+                             <form action="#" method="POST" class="space-y-4">
+                                <div>
+                                    <label for="name" class="sr-only">Full Name</label>
+                                    <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-3 bg-gray-100 border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Full Name">
+                                </div>
+                                <div>
+                                    <label for="email" class="sr-only">Email Address</label>
+                                    <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 bg-gray-100 border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Email Address">
+                                </div>
+                                <div>
+                                    <label for="message" class="sr-only">Message</label>
+                                    <textarea id="message" name="message" rows="4" class="mt-1 block w-full px-4 py-3 bg-gray-100 border-transparent rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" placeholder="Your message..."></textarea>
+                                </div>
+                                <button type="submit" class="w-full bg-cyan-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-cyan-700 cta-button">
+                                    Submit Inquiry
+                                </button>
+                             </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="container mx-auto px-6 py-10">
+            <div class="text-center">
+                 <a href="#" class="flex justify-center items-center space-x-3 mb-4">
+                    <svg class="h-8 w-8 text-cyan-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+                    <span class="text-2xl font-bold">Livingston Specialist Hospital</span>
+                </a>
+                <div class="flex justify-center space-x-6 my-4">
+                    <a href="#services" class="text-gray-400 hover:text-white">Services</a>
+                    <a href="#about" class="text-gray-400 hover:text-white">About</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+                </div>
+                <p class="text-gray-400">&copy; 2025 Livingston Specialist Hospital. All Rights Reserved.</p>
+                <p class="text-sm text-gray-500 mt-2">World-Class Website Blueprint by <a href="https://www.fundbridgeafrica.online" target="_blank" class="hover:text-cyan-400">Fundbridge Consultation Ltd.</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+        
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled', 'shadow-lg');
+            } else {
+                header.classList.remove('header-scrolled', 'shadow-lg');
+            }
+        });
+        
+        // Intersection Observer for fade-in animations
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-section');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+</html>
+
